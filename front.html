@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moon</title>
+    <style>
+        body {
+            background-image: url(m5.jpg);
+
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+        }
+
+        div {
+            /* border: 2px solid rgb(240, 240, 240); */
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 88px;
+            width: auto;
+            margin: -7px -7px;
+            padding: 0px 0px;
+        }
+
+
+        .nav {
+            height: 85px;
+            width: 1044px;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        li {
+
+            list-style: none;
+            padding: 0px 17px;
+        }
+
+        .left {
+            height: 85px;
+            width: 105px;
+
+        }
+
+        .left img {
+            width: 82px;
+            height: 58px;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 3px 3px white;
+
+        }
+
+        .left span {
+            font-size: 13px;
+            font-weight: bold;
+
+        }
+
+        .right {
+            height: 35px;
+            width: 125px;
+        }
+
+        button {
+            border: 1px solid rgb(186, 116, 226);
+            border-radius: 34px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            margin: -2px 2px;
+            padding: 7px 15px;
+            font-size: 15px;
+
+        }
+
+        .cont {
+            /* border: 2px solid white; */
+            text-align: center;
+            height: 345px;
+            padding: 94px 0px;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .cont p {
+            font-size: 34px;
+        }
+
+        .moon {
+            border: 0.5px solid black;
+            border-radius: 50%;
+            width: 83px;
+            height: 53px;
+            position: relative;
+            animation-name: chand1;
+            animation-duration: 50s;
+            animation-iteration-count:infinite;
+        
+        }
+
+        .movement {
+            border-radius: 50%;
+            width: 83px;
+            height: 53px;
+            /* background-color: rgb(153, 186, 200); */
+        }
+
+        @keyframes chand1 {
+            0% {
+                top: 10px;
+                left: 0px;
+            }
+            /* 
+            5%{
+                top: 40px;
+                left: 50px;
+            }
+            10% {
+                top: 30px;
+                left: 100px;
+            }
+            15%{
+                top: 25px;
+                left: 150px;
+            }
+            20%{
+                top: 20px;
+                left: 200px;
+            }
+            25%{
+                top: 15px;
+                left: 225px;
+            }
+            30%{
+                top: 10px;
+                left: 250px;
+            }
+
+            50%{
+                top: 10px;
+                left: 400px;
+            }
+
+             75%{
+                top: 10px;
+                left: 600px;
+            } */
+
+             100%{
+                top: 10px;
+                left: 1200px;
+            }  
+        }
+        .down{
+            margin: 0px 0px;
+            padding: 0px 0px;
+            
+        }
+        main::before{
+            position: absolute;
+            z-index: -1;
+            background-color: black;
+            opacity: 0.46;
+        }
+        .down span{
+            padding: 34px 17px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            color: black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left">
+            <img src="m2.webp" alt="">
+            <span>MOON-HOUSE</span>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Plots</a></li>
+                <li><a href="#">Area</a></li>
+                <li><a href="#">Buisness</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="contact">Contact Us</button>
+        </div>
+    </div>
+    <main>
+        <div class="movement">
+            <img src="moon2.jpg" alt="" class="moon">
+        </div>
+        <section class="cont">
+            <h1> WELCOME TO THE MOON-HOUSE</h1>
+            <br>
+            <p>
+                Hello friends are you ready to come with us to live on the Moon.
+            </p>
+            <p>
+                Ploting is going on here to live on the Moon,whoever want to live,please contact us.
+            </p>
+        </section>
+    </main>
+    <footer class="down">
+        <span>FAQ</span>
+        <span>Help Centre</span>
+        <span>Privacy policy</span>
+        <span>Mail Us</span>
+    </footer>
+</body>
+
+</html>
